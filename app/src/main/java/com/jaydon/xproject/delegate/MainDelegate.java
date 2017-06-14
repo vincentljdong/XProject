@@ -111,6 +111,7 @@ public class MainDelegate extends AppDelegate implements TabHost.OnTabChangeList
     public void onTabChanged(String tabId) {
 //        ShowToastUtil.showLongToast(PublicMethod.getContext(), fragmentTabHost.getCurrentTab());
 
+        /**设置标题栏名称*/
         if (fragmentTabHost.getCurrentTab() == 1)
             title.setText("TWO");
         else if (fragmentTabHost.getCurrentTab() == 2)
