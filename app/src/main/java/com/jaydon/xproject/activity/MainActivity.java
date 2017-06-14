@@ -24,14 +24,14 @@ public class MainActivity extends BaseActivity<MainDelegate> {
      * view 和逻辑是分开的，用的mvp架构
      */
     @Override
-    protected Class getDelegateClass() {
+    protected Class<MainDelegate> getDelegateClass() {
         return MainDelegate.class;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("XProject");
+
 
     }
 
