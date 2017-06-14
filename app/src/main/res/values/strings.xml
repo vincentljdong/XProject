@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">XProject</string>
+
+    <!--主界面tab名称-->
+    <string name="tab_one">ONE</string>
+    <string name="tab_two">TWO</string>
+    <string name="tab_three">THREE</string>
+    <string name="tab_four">FOUR</string>
+    <string name="tab_five">FIVE</string>
 </resources>
