@@ -24,8 +24,25 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
     compile project(path: ':themvp')
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+
+    /**异步*/
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+
+    /**网络请求*/
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    /**图片加载*/
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    compile 'com.android.support:support-v4:25.3.1'
+
+    /**高斯模糊  包括一些其它的图片显示效果 圆形 多边形等*/
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
 }

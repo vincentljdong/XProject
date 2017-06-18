@@ -2,6 +2,8 @@ package com.jaydon.xproject.activity;
 
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
+import com.jaydon.xproject.R;
 import com.jaydon.xproject.base.BaseActivity;
 import com.jaydon.xproject.delegate.MainDelegate;
 
@@ -31,7 +33,6 @@ public class MainActivity extends BaseActivity<MainDelegate> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
     }
 
