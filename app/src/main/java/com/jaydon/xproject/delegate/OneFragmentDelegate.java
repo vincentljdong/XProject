@@ -16,6 +16,11 @@ import com.kymjs.themvp.view.AppDelegate;
 public class OneFragmentDelegate extends AppDelegate {
     @Override
     public int getRootLayoutId() {
-        return R.layout.tab_indicator;
+        return R.layout.fragment_layout_home;
+    }
+
+    @Override
+    public void initWidget() {
+        super.initWidget();
     }
 }

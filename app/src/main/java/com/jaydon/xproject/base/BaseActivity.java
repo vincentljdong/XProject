@@ -45,16 +45,11 @@ public abstract class BaseActivity<T extends IDelegate> extends ActivityPresente
          * 可以直接调用 setStatusBarColor 来设置状态栏的颜色.
          * */
         setImmersionColor();
-        initView();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-    public void initView() {
-        mTitle = (TextView) findViewById(R.id.title);
-        rl_bg = (RelativeLayout) findViewById(R.id.rl_bg);
-    }
 
     /**
      * 子类可自定义标题栏标题
