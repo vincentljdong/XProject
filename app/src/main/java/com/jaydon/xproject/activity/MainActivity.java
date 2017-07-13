@@ -11,8 +11,6 @@ import android.widget.FrameLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.jaydon.rxretrofit.RxRetrofit;
 import com.jaydon.xproject.R;
 import com.jaydon.xproject.base.BaseActivity;
 import com.jaydon.xproject.delegate.MainDelegate;

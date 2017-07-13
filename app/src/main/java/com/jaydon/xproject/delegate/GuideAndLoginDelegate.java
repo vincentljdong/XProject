@@ -17,10 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.request.RequestOptions;
+
 import com.jaydon.xproject.R;
 import com.jaydon.xproject.activity.LoginActivity;
 import com.jaydon.xproject.activity.MainActivity;
@@ -30,7 +27,6 @@ import com.jaydon.xproject.utils.PublicMethod;
 import com.jaydon.xproject.view.CustomVideoView;
 import com.kymjs.themvp.view.AppDelegate;
 
-import jp.wasabeef.glide.transformations.BlurTransformation;
 
 
 /**
