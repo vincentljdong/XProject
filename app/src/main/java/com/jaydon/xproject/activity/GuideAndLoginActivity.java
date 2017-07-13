@@ -92,6 +92,9 @@ public class GuideAndLoginActivity extends BaseActivity<GuideAndLoginDelegate> i
         });
     }
 
+    /**
+     * 控件初始化监听，viewDelegate调取view层公开方法
+     */
     private void initEvent() {
         viewDelegate.get(R.id.tv_look).setOnClickListener(this);
         viewDelegate.get(R.id.bt_login).setOnClickListener(this);
@@ -117,6 +120,9 @@ public class GuideAndLoginActivity extends BaseActivity<GuideAndLoginDelegate> i
         }
     }
 
+    /**
+     * 登录界面viewpager适配器
+     */
     public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
@@ -133,6 +139,9 @@ public class GuideAndLoginActivity extends BaseActivity<GuideAndLoginDelegate> i
         }
     }
 
+    /**
+     * 登录界面动态背景的相关控制  例如：界面覆盖、 调转 、 显示时，暂停或者重放
+     */
     @Override
     protected void onRestart() {
         setVideoView();

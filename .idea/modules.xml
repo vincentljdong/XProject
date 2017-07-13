@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/XProject.iml" filepath="$PROJECT_DIR$/XProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxretrofit/rxretrofit.iml" filepath="$PROJECT_DIR$/rxretrofit/rxretrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxretrofit/rxretrofit.iml" filepath="$PROJECT_DIR$/rxretrofit/rxretrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/themvp/themvp.iml" filepath="$PROJECT_DIR$/themvp/themvp.iml" />
     </modules>
   </component>
