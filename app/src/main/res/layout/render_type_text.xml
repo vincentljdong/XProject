@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--轮播图下方名称弹窗布局-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -22,7 +23,7 @@
         android:layout_alignParentBottom="true"
         android:background="#77000000"
         android:gravity="center_vertical"
-        android:minHeight="30dp"
+        android:minHeight="35dp"
         android:orientation="vertical"
         android:paddingLeft="10dp">
 
@@ -30,6 +31,7 @@
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
             android:textColor="#ffffff" />
     </LinearLayout>
 </RelativeLayout>

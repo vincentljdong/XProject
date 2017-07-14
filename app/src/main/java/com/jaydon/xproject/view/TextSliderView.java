@@ -10,18 +10,18 @@ import com.jaydon.xproject.R;
 
 
 /**
- * This is a slider with a description TextView.
+ * 轮播图文字显示
  */
-public class TextSliderView extends BaseSliderView{
+public class TextSliderView extends BaseSliderView {
     public TextSliderView(Context context) {
         super(context);
     }
 
     @Override
     public View getView() {
-        View v = LayoutInflater.from(getContext()).inflate(R.layout.render_type_text,null);
-        ImageView target = (ImageView)v.findViewById(R.id.daimajia_slider_image);
-        TextView description = (TextView)v.findViewById(R.id.description);
+        View v = LayoutInflater.from(getContext()).inflate(R.layout.render_type_text, null);
+        ImageView target = (ImageView) v.findViewById(R.id.daimajia_slider_image);
+        TextView description = (TextView) v.findViewById(R.id.description);
         description.setText(getDescription());
         bindEventAndShow(v, target);
         return v;

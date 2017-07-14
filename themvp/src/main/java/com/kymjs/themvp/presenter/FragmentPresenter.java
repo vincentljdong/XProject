@@ -18,6 +18,7 @@ package com.kymjs.themvp.presenter;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,6 +39,7 @@ public abstract class FragmentPresenter<T extends IDelegate> extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.e("11111111", "onCreate: ");
         super.onCreate(savedInstanceState);
         try {
             viewDelegate = getDelegateClass().newInstance();
@@ -52,8 +54,14 @@ public abstract class FragmentPresenter<T extends IDelegate> extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle
             savedInstanceState) {
+        Log.e("11111111", "onCreateView: ");
         super.onCreateView(inflater, container, savedInstanceState);
-        viewDelegate.create(inflater, container, savedInstanceState);
+        if (viewDelegate.getRootView() == null)
+            viewDelegate.create(inflater, container, savedInstanceState);
+
+        ViewGroup parent = (ViewGroup) viewDelegate.getRootView().getParent();
+        if (parent != null)
+            parent.removeView(viewDelegate.getRootView());
         return viewDelegate.getRootView();
     }
 

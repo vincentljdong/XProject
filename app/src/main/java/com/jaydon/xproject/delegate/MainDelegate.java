@@ -29,9 +29,7 @@ import com.kymjs.themvp.view.AppDelegate;
  */
 public class MainDelegate extends AppDelegate implements TabHost.OnTabChangeListener, View.OnTouchListener {
 
-
     private AppCompatActivity activity;
-
 
     /**
      * setCintentView另一种方式

@@ -15,7 +15,9 @@
  */
 package com.kymjs.themvp.presenter;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -47,22 +49,11 @@ public abstract class ActivityPresenter<T extends IDelegate> extends AppCompatAc
         super.onCreate(savedInstanceState);
         viewDelegate.create(getLayoutInflater(), null, savedInstanceState);
         setContentView(viewDelegate.getRootView());
-        initToolbar();
         viewDelegate.initWidget();
         bindEvenListener();
     }
 
     protected void bindEvenListener() {
-    }
-
-    /**
-     * 用toolbar调用
-     */
-    protected void initToolbar() {
-        Toolbar toolbar = viewDelegate.getToolbar();
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
     }
 
     /**

@@ -3,7 +3,6 @@ package com.jaydon.xproject.activity;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -16,6 +15,7 @@ import com.jaydon.xproject.base.BaseActivity;
 import com.jaydon.xproject.delegate.MainDelegate;
 import com.jaydon.xproject.enumerate.MainTab;
 import com.jaydon.xproject.utils.PublicMethod;
+import com.jaydon.xproject.view.FragmentTabHost;
 
 
 /**
@@ -115,6 +115,5 @@ public class MainActivity extends BaseActivity<MainDelegate> implements View.OnT
 
     @Override
     public void onTabChanged(String tabId) {
-
     }
 }

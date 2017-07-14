@@ -2,9 +2,11 @@ package com.jaydon.xproject.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 
 import com.jaydon.rxretrofit.util.NetworkUtil;
 import com.jaydon.xproject.R;
@@ -32,6 +34,7 @@ public class OneFragment extends BaseFragment<OneFragmentDelegate> implements Ba
 
     @Override
     protected Class<OneFragmentDelegate> getDelegateClass() {
+        Log.e("1111111", "getDelegateClass()");
         return OneFragmentDelegate.class;
     }
 
